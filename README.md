@@ -1,5 +1,9 @@
 # API for Earthdawn front end system
 
+## Deployment
+
+set `APP_SETTINGS= "config.ProductionConfig"`
+
 ## Useful python tidbits
 
 - Lock requirements.text in with: `pip freeze > requirements.txt`
