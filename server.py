@@ -1,12 +1,26 @@
-from flask import Flask, jsonify, request
+import os
+from flask import Flask
 from flask_jwt_extended import JWTManager
-from api.routes.login import login
 
-app = Flask(__name__)
-app.config["JWT_SECRET_KEY"] = "one-ring"  # change this
-jwt = JWTManager(app)
 
-app.register_blueprint(login)
+def create_app():
+    """Factory function that creates the Flask App"""
 
-if __name__ == "__main__":
-    app.run(debug=True)
+    app = Flask(__name__)
+    app.config.from_object(os.environ['APP_SETTINGS'])
+    # Print ENV to console
+    print(os.environ['APP_SETTINGS'])
+
+    # Instantiate DataBase In App
+    from api.services.database import db
+    db.init_app(app)
+
+    # Import models
+    from api.models import user
+
+    jwt = JWTManager(app)
+
+    from api.routes.login import login
+    app.register_blueprint(login)
+
+    return app
