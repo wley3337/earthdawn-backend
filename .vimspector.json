@@ -1,0 +1,23 @@
+{
+  "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json#",
+  "configurations": {
+    "Python-Flask": {
+      "adapter": "debugpy",
+      "configuration": {
+        "name": "Python: Flask",
+        "type": "python",
+        "request": "launch",
+        "module": "flask" /*let the debugger know that it's a flask app*/,
+        "cwd": "${workspaceRoot}",
+        "stopOnEntry": false,
+        "console": "internalConsole",
+        "debugOptions": [],
+        "subProcess": false,
+        "args": [
+          "run",
+          "--no-debugger"
+        ] /*the module + run then the --no-debugger is to disable the built in debugger for flask*/
+      }
+    }
+  }
+}
