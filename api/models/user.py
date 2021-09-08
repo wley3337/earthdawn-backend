@@ -16,7 +16,8 @@ class User(db.Model):
 
     @classmethod
     def find_by_username(cls, username):
-        return User.query.filter(User.username == username).first()
+        user_return = User.query.filter(User.username == username).first()
+        return user_return
 
     def save(self):
         db.session.add(self)
