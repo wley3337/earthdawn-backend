@@ -7,16 +7,13 @@
         "name": "Python: Flask",
         "type": "python",
         "request": "launch",
-        "module": "flask" /*let the debugger know that it's a flask app*/,
+        "module": "flask",
         "cwd": "${workspaceRoot}",
         "stopOnEntry": false,
         "console": "internalConsole",
         "debugOptions": [],
         "subProcess": false,
-        "args": [
-          "run",
-          "--no-debugger"
-        ] /*the module + run then the --no-debugger is to disable the built in debugger for flask*/
+        "args": ["run", "--no-debugger", "--no-reload"]
       }
     }
   }

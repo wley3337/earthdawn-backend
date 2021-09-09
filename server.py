@@ -19,8 +19,6 @@ def create_app():
     # Import models
     from api.models import user
 
-    jwt = JWTManager(app)
-
     from api.routes.login import login
     app.register_blueprint(login)
 
