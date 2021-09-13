@@ -3,7 +3,7 @@ from http import HTTPStatus
 from flasgger import swag_from
 
 from api.models.user import User
-from api.utils.password_helpers import create_password_digest
+from api.utils.password_helpers import create_password_digest, password_matches
 
 login = Blueprint('login', __name__)
 
@@ -20,8 +20,9 @@ def login_user():
     username = request.json.get("username", None)
     password = request.json.get("password", None)
     user = User.find_by_username(username)
+    password_digest = user.password_digest
 
-    if user and create_password_digest(password) == user.password_digest:
+    if password_matches(password, password_digest):
         return jsonify({"username": username, "password": password}), 200
     else:
         return jsonify({"message": "Username or Password is incorrect."}), 404
