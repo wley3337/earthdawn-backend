@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 from flask_jwt_extended import JWTManager
+from flask_cors import CORS
 
 
 def create_app():
@@ -9,6 +10,7 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(os.environ['APP_SETTINGS'])
 
+    CORS(app, origins=["http://localHost:3000"])
     # Print ENV to console
     print(os.environ['APP_SETTINGS'])
 
