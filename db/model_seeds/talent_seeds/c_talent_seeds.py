@@ -28,7 +28,7 @@ talent_seeds_c = [
         "action":
         True,
         "skill_use":
-        Yes,
+        True,
         "requires_karma":
         False,
         "strain":

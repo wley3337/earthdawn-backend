@@ -118,7 +118,7 @@ The person or object must be within a number of miles equal to the character's r
     },
     {
         "id":
-        "TD6",
+        "TD7",
         "name":
         "Disguise",
         "attribute":
@@ -137,7 +137,7 @@ The person or object must be within a number of miles equal to the character's r
     },
     {
         "id":
-        "TD7",
+        "TD8",
         "name":
         "Disguise Self",
         "attribute":
@@ -158,7 +158,7 @@ The required Karma Point is not spent for the Talent Test. Instead, the disguise
     },
     {
         "id":
-        "TD8",
+        "TD9",
         "name":
         "Dominate Beast",
         "attribute":
@@ -177,7 +177,7 @@ The required Karma Point is not spent for the Talent Test. Instead, the disguise
     },
     {
         "id":
-        "TD9",
+        "TD10",
         "name":
         "Down Strike",
         "attribute":
@@ -198,7 +198,7 @@ The required Karma Point is not spent for the Talent Test. Instead, the disguise
     },
     {
         "id":
-        "TD10",
+        "TD11",
         "name":
         "Durability",
         "attribute":
@@ -233,7 +233,7 @@ Durability, Sky Raider Durability, and so on)."""
     },
     {
         "id":
-        "TD11",
+        "TD12",
         "name":
         "Durability (Mount)",
         "attribute":

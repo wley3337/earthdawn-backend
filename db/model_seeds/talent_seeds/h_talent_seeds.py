@@ -1,4 +1,4 @@
-talen_seeds_h = [
+talent_seeds_h = [
     {
         "id":
         "TH1",

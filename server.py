@@ -20,6 +20,7 @@ def create_app():
 
     # Import models
     from api.models import user
+    from api.models import talent
 
     from api.routes.login import login
     app.register_blueprint(login)

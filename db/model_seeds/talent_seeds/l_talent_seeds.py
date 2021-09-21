@@ -30,7 +30,7 @@ talent_seeds_l = [
         "base_modifier":
         0,
         "action":
-        Flase,
+        False,
         "skill_use":
         False,
         "requires_karma":

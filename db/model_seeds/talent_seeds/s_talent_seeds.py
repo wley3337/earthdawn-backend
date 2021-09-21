@@ -450,7 +450,7 @@ Experience Award: 20
         "skill_use":
         True,
         "requires_karma":
-        Yes,
+        True,
         "strain":
         0,
         "discipline_talent": ["thief"],

@@ -1,4 +1,4 @@
-talent_seeds_A = [{
+talent_seeds_a = [{
     "id":
     "TA1",
     "name":
