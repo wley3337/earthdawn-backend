@@ -1,16 +1,6 @@
-# {
-#     "id": "TC6",
-#     "name": "",
-#     "attribute": "dexterity",
-#     "base_modifier": 3,  #default 0
-#     "action": True,
-#     "skill_use": False,
-#     "requires_karma": False,
-#     "strain": 0,
-#     "discipline_talent": ["weaponsmith"],
-#     "description": """"""
-# },
+from dataclasses import dataclass, asdict
 from api.services.database import db
+from api.services.marshmallow import ma
 
 
 class Talent(db.Model):
@@ -35,6 +25,11 @@ class Talent(db.Model):
         talent = Talent.query.filter(Talent.id == id).first()
         return talent
 
+    @classmethod
+    def all(cls):
+        all_talents = Talent.query.all()
+        return all_talents
+
     def save(self):
         """Persists record to database"""
         db.session.add(self)
@@ -44,3 +39,12 @@ class Talent(db.Model):
     def __repr__(self):
         """Representation of class: Talent"""
         return '<Talent %r >' % self.name
+
+
+class TalentSchema(ma.SQLAlchemyAutoSchema):
+    class Meta:
+        model = Talent
+
+
+talent_schema = TalentSchema()
+talents_schema = TalentSchema(many=True)
