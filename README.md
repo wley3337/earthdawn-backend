@@ -15,3 +15,4 @@ set `APP_SETTINGS= "config.ProductionConfig"`
 [SocketIO General docs](https://socket.io/docs/v4/#What-Socket-IO-is)
 [flask-jwt-extended](https://flask-jwt-extended.readthedocs.io/en/stable/installation/)
 [SQLAlchemy](https://docs.sqlalchemy.org/en/14/)
+[Flask-DB](https://github.com/nickjj/flask-db)
