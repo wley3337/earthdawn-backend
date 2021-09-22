@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, request
 from http import HTTPStatus
 from flasgger import swag_from
+from flask_jwt_extended import jwt_required
 
 from api.models.talent import Talent, talent_schema, talents_schema
 
@@ -14,6 +15,7 @@ talents = Blueprint('talents', __name__)
             'description': 'Get all talents'
         }
     }})
+@jwt_required()
 def get_all_talents():
     """Returns all talents in the database sorted by id"""
     all_talents = Talent.all()
