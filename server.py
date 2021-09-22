@@ -7,11 +7,11 @@ def create_app():
 
     app = Flask(__name__)
     app.config.from_object(os.environ['APP_SETTINGS'])
+    # Print ENV to console
+    print(os.environ['APP_SETTINGS'])
 
     from flask_cors import CORS
     CORS(app, origins=["http://localHost:3000"])
-    # Print ENV to console
-    print(os.environ['APP_SETTINGS'])
 
     # Instantiate JWT In App
     from api.services.jwt import jwt
@@ -32,6 +32,9 @@ def create_app():
     # Import Routes
     from api.routes.login import login
     app.register_blueprint(login)
+
+    from api.routes.logout import logout
+    app.register_blueprint(logout)
 
     from api.routes.talents import talents
     app.register_blueprint(talents)
