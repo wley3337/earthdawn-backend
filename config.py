@@ -6,8 +6,10 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     DEBUG = False
     FLASK_ENV = os.environ['FLASK_ENV']
+    JWT_COOKIE_CSRF_PROTECT = True
     JWT_COOKIE_SECURE = True
     JWT_SECRET_KEY = os.environ['JWT_SECRET_KEY']
+    JWT_CSRF_METHODS = ["POST", "PUT", "PATCH", "DELETE", "GET"]
     JWT_TOKEN_LOCATION = ["cookies"]
     PYTHONPATH = '.'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
