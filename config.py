@@ -9,7 +9,7 @@ class Config(object):
     FLASK_ENV = os.environ['FLASK_ENV']
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URI']
-    SECRET_KEY = os.environ['SECRET_KEY']
+    JWT_SECRET_KEY = os.environ['JWT_SECRET_KEY']
     PYTHONPATH = '.'
 
 

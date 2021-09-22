@@ -1,6 +1,5 @@
 import os
 from flask import Flask
-from flask_jwt_extended import JWTManager
 
 
 def create_app():
@@ -14,11 +13,15 @@ def create_app():
     # Print ENV to console
     print(os.environ['APP_SETTINGS'])
 
+    # Instantiate JWT In App
+    from api.services.jwt import jwt
+    jwt.init_app(app)
+
     # Instantiate DataBase In App
     from api.services.database import db
     db.init_app(app)
 
-    # Add Marshmallow to app
+    # Instantiate Marshmallow to app
     from api.services.marshmallow import ma
     ma.init_app(app)
 
