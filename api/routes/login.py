@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, request
 from http import HTTPStatus
 from flasgger import swag_from
+from flask_jwt_extended import create_access_token, set_access_cookies
 
 from api.models.user import User
 from api.utils.password_helpers import create_password_digest, password_matches
@@ -23,6 +24,15 @@ def login_user():
     password_digest = user.password_digest
 
     if password_matches(password, password_digest):
-        return jsonify({"username": username, "password": password}), 200
+        # create jwt with user.id
+        additional_claims = {"user_id": user.id}
+        access_token = create_access_token(identity=user.id,
+                                           additional_claims=additional_claims)
+        response = jsonify({
+            "username": username,
+            "password": password,
+        })
+        set_access_cookies(response, access_token)
+        return response, 200
     else:
         return jsonify({"message": "Username or Password is incorrect."}), 404
