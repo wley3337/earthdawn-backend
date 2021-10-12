@@ -1,6 +1,6 @@
 from dataclasses import dataclass, asdict
 from api.services.database import db
-from api.services.marshmallow import ma
+from api.services.marshmallow import ma, CamelCaseSchema
 
 
 class Talent(db.Model):
@@ -46,5 +46,14 @@ class TalentSchema(ma.SQLAlchemyAutoSchema):
         model = Talent
 
 
-talent_schema = TalentSchema()
-talents_schema = TalentSchema(many=True)
+class TalentCamelCaseSchema(CamelCaseSchema):
+    class Meta:
+        model = Talent
+        fields = [
+            'id', 'name', 'attribute', 'base_modifier', 'action', 'skill_use',
+            'requires_karma', 'strain', 'description', 'discipline_talent'
+        ]
+
+
+talent_schema = TalentCamelCaseSchema()
+talents_schema = TalentCamelCaseSchema(many=True)
