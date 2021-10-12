@@ -9,7 +9,7 @@ from api.utils.password_helpers import create_password_digest, password_matches
 login = Blueprint('login', __name__)
 
 
-@login.route('/v1/login', methods=["POST"])
+@login.route('/api/v1/login', methods=["POST"])
 @swag_from(
     {'response': {
         HTTPStatus.OK.value: {

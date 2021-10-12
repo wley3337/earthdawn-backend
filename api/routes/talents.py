@@ -5,7 +5,7 @@ from flask_jwt_extended import jwt_required
 
 from api.models.talent import Talent, talent_schema, talents_schema
 
-talents = Blueprint('talents', __name__, url_prefix='/v1/talents')
+talents = Blueprint('talents', __name__, url_prefix='/api/v1/talents')
 
 
 @talents.route('/', methods=["GET"])

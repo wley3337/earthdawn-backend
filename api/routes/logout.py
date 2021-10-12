@@ -6,7 +6,7 @@ from flask_jwt_extended import unset_jwt_cookies
 logout = Blueprint('logout', __name__)
 
 
-@logout.route('/v1/logout', methods=["GET"])
+@logout.route('/api/v1/logout', methods=["GET"])
 @swag_from({
     'response': {
         HTTPStatus.OK.value: {
