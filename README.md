@@ -28,3 +28,7 @@ headers:{
   // ...,
 }
 ```
+
+## Local setup:
+
+To facilitate cookie auth you need to setup a local nginx server that serves both the front end code and back end code from the same domain.
