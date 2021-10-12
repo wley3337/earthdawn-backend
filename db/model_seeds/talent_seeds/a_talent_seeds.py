@@ -70,8 +70,10 @@ talent_seeds_a = [{
     "discipline_talent": ["sky_raider"],
     "description":
     """Air Sailing is the art of maneuvering the great flying ships used by Sky Raiders. With this talent a character knows how to work the rigging, tiller, or oars of the ships. Any character who wishes to join a crew must have at least Rank 1 Air Sailing Talent. Command ranks require higher ability: a mate must have at least Rank 4, a captain at least Rank 7, and a navigator at least Rank 8. Not all ships have navigators.
-    Characters use Air Sailing for the rowing that propels airships through the sky. To help row an airship, a character must roll a 4 on an Air Sailing Test. An above-average success will permit the character to take the place of more than one rower: a Good success counts as 2 rowers. An Excellent success means the character can replace 3 rowers. An Extraordinary success counts as 4 rowers.
-    For a ship to stay airborne, at least one-fourth of its rowers must make successful Air Sailing Tests. If at least half the rowers make successful tests, the ship can maneuver at its current altitude, dive, or climb slowly in a straight line. If three-fourths of the rowers are successful, the ship can speed up, maneuver while climbing, or perform aerobatics. A ship with a rowing crew of 20 needs at least 5 rowers to succeed at Air Sailing Tests in order to stay afloat. This might also be an equivalent number, such as 2 rowers, 1 of whom achieved an Extraordinary success on the Air Sailing Test(thereby replacing 4 rowers)."""
+
+Characters use Air Sailing for the rowing that propels airships through the sky. To help row an airship, a character must roll a 4 on an Air Sailing Test. An above-average success will permit the character to take the place of more than one rower: a Good success counts as 2 rowers. An Excellent success means the character can replace 3 rowers. An Extraordinary success counts as 4 rowers.
+
+For a ship to stay airborne, at least one-fourth of its rowers must make successful Air Sailing Tests. If at least half the rowers make successful tests, the ship can maneuver at its current altitude, dive, or climb slowly in a straight line. If three-fourths of the rowers are successful, the ship can speed up, maneuver while climbing, or perform aerobatics. A ship with a rowing crew of 20 needs at least 5 rowers to succeed at Air Sailing Tests in order to stay afloat. This might also be an equivalent number, such as 2 rowers, 1 of whom achieved an Extraordinary success on the Air Sailing Test(thereby replacing 4 rowers)."""
 }, {
     "id":
     "TA5",
@@ -108,7 +110,8 @@ talent_seeds_a = [{
     "discipline_talent": ["beastmaster"],
     "description":
     """The Animal Bond talent creates a bond of trust between an animal and a character. The character must work with the animal for a week previous to each use of the Animal Bond talent, treating the animal well during this time. The character then makes an Animal Bond Test against either the animal's Social or Spell Defense, whichever is higher.
-    After the Beastmaster has successfully used this talent one time, the animal takes a neutral attitude ("live and let live") toward him or her. A second successful use makes the animal friendly enough to the character that he will play with the character. The character cannot further attach the animal to him until he improves his Animal Bond talent to at least Rank 4. Once a character has Animal Bond at Rank 4 or more, he can begin to train the animal. When training becomes possible, a successful Animal Bond Test makes the animal loyal to the character as long as the character remains loyal to the animal. The animal willingly takes risks for the character and expects appropriate rewards for doing so. (This is more easily accomplished than for human friends. All a dog really wants is lots of affection and enough food.) A loyal animal will accompany a character on adventures if the character so desires."""
+
+After the Beastmaster has successfully used this talent one time, the animal takes a neutral attitude ("live and let live") toward him or her. A second successful use makes the animal friendly enough to the character that he will play with the character. The character cannot further attach the animal to him until he improves his Animal Bond talent to at least Rank 4. Once a character has Animal Bond at Rank 4 or more, he can begin to train the animal. When training becomes possible, a successful Animal Bond Test makes the animal loyal to the character as long as the character remains loyal to the animal. The animal willingly takes risks for the character and expects appropriate rewards for doing so. (This is more easily accomplished than for human friends. All a dog really wants is lots of affection and enough food.) A loyal animal will accompany a character on adventures if the character so desires."""
 }, {
     "id":
     "TA7",
@@ -127,7 +130,8 @@ talent_seeds_a = [{
     "discipline_talent": ["beastmaster"],
     "description":
     """The Animal Possession talent allows a character to place his or her spirit into the body of an animal. Make an Animal Possession Test against the Willpower step of the animal. This talent only works if the character is touching the animal. If the character makes a successful Animal Possession Test, his spirit takes possession of the animal's body and the animal's spirit goes into the character's body. The character now controls the animal's body, but not vice versa. While using Animal Possession, the character's physical form slumps into a coma-like state. He retains his own intelligence while in the animal body, but cannot perform any actions of which the animal is not normally capable.
-    The character's control lasts for a number of hours equal to his Animal Possession rank or until the animal and character touch again. When the possession ends or the animal and character touch, both spirits return to their proper bodies. If either the animal's or the character's body is killed, the spirits and bodies will both die."""
+
+The character's control lasts for a number of hours equal to his Animal Possession rank or until the animal and character touch again. When the possession ends or the animal and character touch, both spirits return to their proper bodies. If either the animal's or the character's body is killed, the spirits and bodies will both die."""
 }, {
     "id":
     "TA8",
@@ -221,5 +225,6 @@ The character makes an Arcane Mutterings Test against the target's Social Defens
     "discipline_talent": ["thief", "troubadour", "warrior"],
     "description":
     """The Avoid Blow talent allows a character to dodge blows directed at him in combat at the last minute. Any time an opponent attacks a character with the Avoid Blow talent, the attacked individual makes an Avoid Blow Test to dodge the blow before it causes damage. If he rolls a result equal to or higher than that of the opponent's Attack Test, the target avoids the blow. This means that he or she saw the attack coming and dodged out of the way at the last minute. Your character cannot use the Avoid Blow Talent to dodge blind-side attacks, however. Avoid Blow can only be used once per Combat Round. A character who attempts and fails to use Avoid Blow is knocked down, whether or not the blow would normally have done so (See Make Knockdown Test in Combat.). Avoid Blow can be used in the same round as an Attack Test.
+
 Example: Poorht, windling Thief, has a Physical Defense Rating of 8. The jehuthra attacking him rolls a 12 on the Attack Test, which is higher than Poorht's Physical Defense of 8. The blow would normally have landed, but Poorht sees it coming and decides to use his Avoid Blow talent. He rolls a 12, just enough for Poorht to dodge and take no damage. """
 }]
